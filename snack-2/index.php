@@ -25,6 +25,7 @@ che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è
         <label for="email">Inserisci la tua email:</label>
         <input type="text" name="email" id="email">
 
+        <button> Vai </button>
     </form>
 </body>
 </html>
