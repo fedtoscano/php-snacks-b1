@@ -35,6 +35,10 @@ Olimpia Milano - Cantù | 55-60 -->
             'puntiOspite' => '98',
         ],
     ];
+
+    foreach ($bastekMatches as $key => $match) {
+        echo ($match['casa'].'-'.$match['ospite'].'|'.$match['puntiCasa'].$match['puntiOspite']);
+    };
 ?>
 
 
