@@ -37,7 +37,7 @@ Olimpia Milano - Cantù | 55-60 -->
     ];
 
     foreach ($bastekMatches as $key => $match) {
-        echo ($match['casa'].'-'.$match['ospite'].'|'.$match['puntiCasa'].$match['puntiOspite']);
+        echo ($match['casa'].' - '.$match['ospite'].' | '.$match['puntiCasa'].$match['puntiOspite']);
     };
 ?>
 
@@ -50,6 +50,11 @@ Olimpia Milano - Cantù | 55-60 -->
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>partite a schermo:</h1>
+        <?php     
+        foreach ($bastekMatches as $key => $match) {
+        echo '<p>'.($match['casa'].' - '.$match['ospite'].' | '.$match['puntiCasa'].$match['puntiOspite']).'</p>';};
+        ?>
+
 </body>
 </html>
