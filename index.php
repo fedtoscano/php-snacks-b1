@@ -53,7 +53,7 @@ Olimpia Milano - Cantù | 55-60 -->
     <h1>partite a schermo:</h1>
         <?php     
         foreach ($bastekMatches as $key => $match) {
-        echo '<p>'.($match['casa'].' - '.$match['ospite'].' | '.$match['puntiCasa'].$match['puntiOspite']).'</p>';};
+        echo '<p>'.($match['casa'].' - '.$match['ospite'].' | '.$match['puntiCasa'].' - '.$match['puntiOspite']).'</p>';};
         ?>
 
 </body>
