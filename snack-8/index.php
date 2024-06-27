@@ -17,10 +17,10 @@ Nel nostro index.php stampiamo in pagina ognuno di questi array.
         return $animal['classe'] === "Reptilia";
     });
 
-    $otherAnimals = array_filter($animals, function($animal){
-        if(in_array($animal, $mammals) 
-        && in_array($animal, $fishes) 
-        && in_array($animal, $reptiles)){
+    $otherAnimals = array_filter($animals, function($animal) use($mammals, $fishes, $reptiles){
+        if(!in_array($animal, $mammals) 
+        && !in_array($animal, $fishes) 
+        && !in_array($animal, $reptiles)){
             return true;
         }
         else{
