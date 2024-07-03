@@ -8,6 +8,12 @@ class User{
 
 
     //! CONSTRUCTOR
+    /**
+     * Creates a new instance of a User class
+     *
+     * @param [String] $name The name of the user
+     * @param [String] $email The email of the user
+     */
     protected function __construct($name, $email){
         $this->name = $name;
         $this->email = $email;
