@@ -22,10 +22,10 @@ class PremiumUser extends User{
      * @param [String] $email the email of the Premium User
      * @param [String] $badgeUrl the URL of the badge image 
      */
-    protected function __construct($name, $email, $badgeUrl)
+    public function __construct($name, $email, $badgeUrl, $year, $status)
     {
         parent::__construct($name, $email);
         $this->badgeUrl = $badgeUrl;
-        $this->membership = new Membership();
+        $this->membership = new Membership($year, $status);
     }
 }

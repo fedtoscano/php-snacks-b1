@@ -14,7 +14,7 @@ class User{
      * @param [String] $name The name of the user
      * @param [String] $email The email of the user
      */
-    protected function __construct($name, $email){
+    public function __construct($name, $email){
         $this->name = $name;
         $this->email = $email;
     }
