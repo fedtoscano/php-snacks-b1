@@ -27,8 +27,6 @@ Nel nostro index.php stampiamo in pagina ognuno di questi array.
             return false;
         }
     });
-
+    
     var_dump($mammals, $fishes, $reptiles, $otherAnimals);
-
-
 ?>
