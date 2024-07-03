@@ -18,6 +18,10 @@ class Membership {
     }
 
     protected function setStatus(){
-        
+        if($this->year > 2005){
+            $this-> status = 'gold';
+        } elseif ($this->year > 2003){
+            $this-> status = 'platinum';
+        }
     }
 }
